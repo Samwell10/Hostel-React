@@ -1,8 +1,11 @@
 import './Sidebar.css';
-import {FaTicketAlt, FaPencilAlt} from 'react-icons/fa'
-const Sidebar = () => {
+import {FaTicketAlt, FaPencilAlt, FaBars, FaTimes} from 'react-icons/fa'
+const Sidebar = ({Sidebar, closeSidebar}) => {
     return ( 
-        <div className="sidebar">
+        <div className={Sidebar?"sidebar sidebar--open": "sidebar"}>
+            <div className="sidebar-cross" onClick={closeSidebar}>
+                <FaTimes />
+            </div>
             <div className="sidebar-inner">
                 <section className="profile-pic">
                     <img src="https://source.unsplash.com/random/?people"></img>

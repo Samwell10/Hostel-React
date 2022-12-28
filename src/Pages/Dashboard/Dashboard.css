@@ -5,6 +5,15 @@
     width: calc(100% - 280px);
     margin-left: 280px;
     padding: 40px;
+}
+.sidebar-bars{
+    display: none;
+}
+.sidebar-bars svg{
+    font-size: 25px;
+}
+.dashboard-body-inner{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +23,7 @@
     justify-content: center;
 }
 .school-logo img{
-    width: 40%;
+    width: 130px;
 }
 .dashboard-intro{
     font-family: "Hanken Grotesk";
@@ -81,4 +90,24 @@
     font-size: 1.1em;
     font-weight: 600;
     color: rgb(29, 27, 27);
+}
+@media screen and (max-width:900px){
+    .dashboard-body{
+        width: 100%;
+        margin-left: 0px;
+        padding: 20px;
+    }
+    .sidebar-bars{
+        display: block;
+        z-index: 110;
+    }
+    .dashboard-hostel{
+        row-gap: 60px;
+    }
+    .hostel{
+        border: 3px solid #4c9eff;
+        box-shadow: 4px 4px 41px -14px #4c9eff;
+        -webkit-box-shadow: 4px 4px 41px -14px #4c9eff;
+        -moz-box-shadow: 4px 4px 41px -14px #4c9eff;
+    }
 }
